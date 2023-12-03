@@ -1,0 +1,47 @@
+{% extends 'shared/layout.html' %}
+{% load render_partial %}
+{% load jalali_tags %}
+{% load poll_extras %}
+{% block title %}
+    خرید ها
+{% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 pull-right">
+                {% render_partial 'account_module.views.user_panel_menu_component' %}
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h2 class="title text-center">لیست خرید ها</h2>
+                        <table class="table table-responsive table-striped">
+                            <tr>
+                                <th class="text-right">شناسه</th>
+                                <th class="text-right">تاریخ</th>
+                                <th class="text-right">قیمت فاکتور</th>
+                                <th class="text-right">نهایی شده</th>
+                                <th class="text-right">دستورات</th>
+                            </tr>
+                            {% for order in orders %}
+                                <tr>
+                                    <td>{{ order.id }}</td>
+                                    <td>{{ order.pay_date | to_jalali }}</td>
+                                    <td>{{ order.get_total_price | three_digits_currency }}</td>
+                                    <td>
+                                        {% if order.is_paid %}
+                                            بله
+                                        {% else %}
+                                            خیر
+                                        {% endif %}
+                                    </td>
+                                    <td><a href="{% url 'previous_order_detail_page' order.id %}" class="btn btn-primary">مشاهده</a></td>
+                                </tr>
+                            {% endfor %}
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

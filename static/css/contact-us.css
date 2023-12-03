@@ -1,0 +1,6 @@
+.errorlist{
+    padding-right: 0 !important;
+}
+.errorlist li{
+    color: #c71e1e;
+}

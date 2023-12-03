@@ -1,0 +1,27 @@
+<div class="price-range"><!--price-range-->
+    <h2>فیلتـر قیمـت</h2>
+    <div class="well">
+        <input
+                type="text"
+                class="span2"
+                value="{{ start_price }},{{ end_price }}"
+                data-slider-min="0"
+                data-slider-max="{{ max_price }}"
+                data-slider-step="100"
+                data-slider-value="[{{ start_price }},{{ end_price }}]"
+                id="sl2" ><br />
+        <b>{{ max_price }}</b> <b class="pull-left">0</b>
+        <div>
+            <form action="" id="price_filter_form">
+                {% if page_obj.number < paginator_num_pages %}
+                    <input type="hidden" id="page_number_input" name="page" value="{{ page_obj.number }}">
+                {% else %}
+                    <input type="hidden" id="page_number_input" name="page" value="1">
+                {% endif %}
+                <input type="hidden" id="start_price_input" name="start_price" value="{{ start_price }}">
+                <input type="hidden" id="end_price_input" name="end_price" value="{{ end_price }}">
+            </form>
+            <button class="btn btn-primary btn-block" onclick="filterProducts()">فیلتر قیمت</button>
+        </div>
+    </div>
+</div><!--/price-range-->

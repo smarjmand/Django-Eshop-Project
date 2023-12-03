@@ -1,0 +1,16 @@
+{% extends 'shared/layout.html' %}
+{% load poll_extras %}
+{% block title %}
+    سبد خرید
+{% endblock %}
+{% block header_ref %}
+    <link rel="stylesheet" href="/static/css/short_title.css">
+{% endblock %}
+{% block content %}
+    <div id="order-detail-content">
+        {% include 'user_basket_content.html' %}
+    </div>
+{% endblock %}
+{% block footer_ref %}
+    <script src="/static/js/remove_product_from_basket.js"></script>
+{% endblock %}

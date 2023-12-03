@@ -1,0 +1,55 @@
+{% extends 'shared/layout.html' %}
+{% block title %}لیست محصولات{% endblock %}
+{% load render_partial %}
+{% load thumbnail %}
+{% block header_ref %}
+	<link href="/static/css/products_price_filter.css" rel="stylesheet">
+{% endblock %}
+{% block content %}
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9 padding-right">
+                    <div class="features_items"><!--features_items-->
+                        <h2 class="title text-center">محصولات </h2>
+                        {% if products %}
+                            {% for product in products %}
+                                {% include 'includes/product_item_partial.html' %}
+                            {% endfor %}
+                            {% include 'includes/products_paginator_partial.html' %}
+                        {% else %}
+                            <h3 class="alert alert-warning">هیچ محصولی یافت نشد</h3>
+                        {% endif %}
+                    </div><!--features_items-->
+                </div>
+                <div class="col-sm-3">
+                    <div class="left-sidebar">
+
+                        {% render_partial 'product_module.views.product_categories_component' %}
+                        {% render_partial 'product_module.views.product_brands_component' %}
+
+                        {% include 'includes/price_range_partial.html' %}
+
+                        {% if banners %}
+                            {% for banner in banners %}
+                                <a href="{{ banner.url }}" target="_blank">
+                                    <div class="shipping text-center">
+                                        {% thumbnail banner.image "270x329" crop='center' as img %}
+                                            <p><b>{{ banner.title }}</b></p>
+                                            <img src="{{ img.url }}" alt="">
+                                        {% endthumbnail %}
+                                    </div>
+                                </a>
+                                <br>
+                            {% endfor %}
+                        {% endif %}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+{% block footer_ref %}
+    <script src="/static/js/products_price_filter.js"></script>
+{% endblock %}

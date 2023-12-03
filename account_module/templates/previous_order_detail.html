@@ -1,0 +1,74 @@
+{% extends 'shared/layout.html' %}
+{% load render_partial %}
+{% load poll_extras %}
+{% block title %}
+    جزئیات خرید
+{% endblock %}
+<link rel="stylesheet" href="/static/css/short_title.css">
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 pull-right">
+                {% render_partial 'account_module.views.user_panel_menu_component' %}
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="title text-center">محصولات</h2>
+                    <section id="cart_items">
+                        <div class="table-responsive cart_info">
+                            <table class="table table-condensed">
+                                <thead>
+                                <tr class="cart_menu">
+                                    <td class="image">کـالا</td>
+                                    <td class="description"></td>
+                                    <td class="price">قیمت</td>
+                                    <td class="quantity">تعـداد</td>
+                                    <td class="total">مجمـوع</td>
+                                    <td></td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for detail in order.orderdetail_set.all %}
+                                    <tr>
+                                        <td class="cart_product">
+                                            <a href=""><img src="{{ detail.product.image.url }}" height="90px" width="90px" alt=""></a>
+                                        </td>
+                                        <td class="cart_description">
+                                            <h4><a href="" class="one-line-text"> {{ detail.product.title }} </a></h4>
+                                        </td>
+                                        <td class="cart_price">
+                                            <p>{{ detail.product.price | three_digits_currency}}</p>
+                                        </td>
+                                        <td class="cart_price">
+                                            <p>{{ detail.count }}</p>
+                                        </td>
+                                        <td class="cart_total">
+                                            <p class="cart_total_price">{{ detail.get_total_price | three_digits_currency }}</p>
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </section> <!--/#cart_items-->
+                    <section id="do_action">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="total_area">
+                                        <ul>
+                                            <li>مجمـوع سبـد خریـد <span> {{ order.get_total_price | three_digits_currency }} </span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

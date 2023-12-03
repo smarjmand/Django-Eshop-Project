@@ -1,0 +1,54 @@
+{% extends 'shared/layout.html' %}
+{% load render_partial %}
+{% block title %}
+    پنل کاربری
+{% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 pull-right">
+                {% if user.avatar %}
+                    <a class="thumbnail">
+                        <img src="{{ user.avatar.url }}" alt="">
+                    </a>
+                {% else %}
+                    <a class="thumbnail">
+                        <img src="/static/images/account/profile.png" alt="">
+                    </a>
+                {% endif %}
+                {% render_partial 'account_module.views.user_panel_menu_component' %}
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h2 class="title text-center">پنل کاربری</h2>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title" >نام</h3>
+                            </div>
+                            <div class="panel-body">{{ user.first_name }}</div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">نام خانوادگی</h3>
+                            </div>
+                            <div class="panel-body">{{ user.last_name }}</div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">آدرس</h3>
+                            </div>
+                            <div class="panel-body">{{ user.address }}</div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">درباره شخص</h3>
+                            </div>
+                            <div class="panel-body">{{ user.about_user }}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

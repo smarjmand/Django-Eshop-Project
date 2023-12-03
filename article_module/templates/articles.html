@@ -1,0 +1,65 @@
+{% extends 'shared/layout.html' %}
+{% load thumbnail %}
+{% load render_partial %}
+{% block title %}
+    مقالات
+{% endblock %}
+{% block content %}
+    <section>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-9">
+                    <div class="blog-post-area">
+                        <h2 class="title text-center">آخریـن مقالات</h2>
+
+                        {% if articles %}
+                            {% for article in articles %}
+                                <div class="single-blog-post">
+                                    <h3>{{ article.title }}</h3>
+                                    <div class="post-meta">
+                                        <ul>
+                                            <li><i class="fa fa-user"></i> {{ article.author }} </li>
+                                            <li><i class="fa fa-clock-o"></i> {{ article.created_date.time }} </li>
+                                            <li><i class="fa fa-calendar"></i> {{ article.get_jalali_date }} </li>
+                                        </ul>
+                                    </div>
+                                    <a href="{% url 'article_detail_page' article.slug %}">
+                                        {% thumbnail article.image "862x398" quality=50 crop='center' as img %}
+                                            <img src="{{ img.url }}" alt="">
+                                        {% endthumbnail %}
+                                    </a>
+                                    <p>{{ article.description }}</p>
+                                    <a  class="btn btn-primary" href="{% url 'article_detail_page' article.slug %}" target="_blank">ادامـه مطلب</a>
+                                </div>
+                            {% endfor %}
+                            <div class="pagination-area">
+                                <ul class="pagination">
+                                    {% if page_obj.has_previous %}
+                                        <li><a href="?page={{ page_obj.previous_page_number }}"><i class="fa fa-angle-double-left"></i></a></li>
+                                    {% endif %}
+                                    {% for page in paginator.page_range %}
+                                        <li>
+                                            <a href="?page={{ page }}" class="{% if page_obj.number == page %}active{% endif %} ">{{ page }}</a>
+                                        </li>
+                                    {% endfor %}
+                                    {% if page_obj.has_next %}
+                                        <li><a href="?page={{ page_obj.next_page_number }}"><i class="fa fa-angle-double-right"></i></a></li>
+                                    {% endif %}
+                                </ul>
+                            </div>
+                        {% else %}
+                            <center>
+                                <h4>مقاله ای در این دسته بندی وجود ندارد :(</h4>
+                                <img src="/static/images/404/404.png" height="400" width="400" alt="">
+                        {% endif %}
+
+                    </div>
+                </div>
+
+                {% render_partial 'article_module.views.article_categories_component' %}
+
+            </div>
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,14 @@
+<div class="clearfix"></div>
+<ul class="pagination">
+    {% if page_obj.has_previous %}
+        <li><a onclick="fillPage({{ page_obj.previous_page_number }})" class="cursor-pointer">قبلی</a></li>
+    {% endif %}
+    {% for page_number in paginator.page_range %}
+        <li class="{% if page_obj.number == page_number %} active {% endif %}">
+            <a onclick="fillPage({{ page_number }})" class="cursor-pointer">{{ page_number }}</a>
+        </li>
+    {% endfor %}
+    {% if page_obj.has_next %}
+        <li><a onclick="fillPage({{ page_obj.next_page_number }})" class="cursor-pointer">بعدی</a></li>
+    {% endif %}
+</ul>
