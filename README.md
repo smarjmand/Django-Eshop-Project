@@ -33,3 +33,7 @@ phone : 09103236629
 
 <h4>user panel :</h4>
 <img width="646" alt="user_panel" src="https://github.com/smarjmand/Django-Eshop-Project/assets/132053139/53b03b6b-9b5d-4610-ba94-23ea3588c641">
+
+
+<h4>about us page :</h4>
+<img width="653" alt="about_me_page" src="https://github.com/smarjmand/Django-Eshop-Project/assets/132053139/1bb4919b-e6a8-4d0a-b55b-be5ba910b66b">
