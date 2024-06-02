@@ -60,6 +60,19 @@ phone : 09103236629
 <img width="646" alt="user_panel" src="https://github.com/smarjmand/Django-Eshop-Project/assets/132053139/53b03b6b-9b5d-4610-ba94-23ea3588c641">
 
 
+<h4>edit user info :</h4>
+<img width="832" alt="user_1" src="https://github.com/smarjmand/Django-Eshop-Project/assets/132053139/dfebad40-e1b0-4079-a152-494c779eb485">
+
+
+<h4>change password :</h4>
+<img width="808" alt="user_2" src="https://github.com/smarjmand/Django-Eshop-Project/assets/132053139/62201269-aba6-403a-8ab0-03223d2d5ad4">
+
+
+<h4>user ordered :</h4>
+<img width="790" alt="user_3" src="https://github.com/smarjmand/Django-Eshop-Project/assets/132053139/d4d04ab9-a519-4d38-9cbb-590ed3ff7dbd">
+
+
+
 <h4>about us page :</h4>
 <img width="653" alt="about_me_page" src="https://github.com/smarjmand/Django-Eshop-Project/assets/132053139/1bb4919b-e6a8-4d0a-b55b-be5ba910b66b">
 
