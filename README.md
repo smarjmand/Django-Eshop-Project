@@ -23,6 +23,14 @@ phone : 09103236629
 <img width="671" alt="order_basket" src="https://github.com/smarjmand/Django-Eshop-Project/assets/132053139/50aeed5d-a1c7-4c99-aa81-3acb72eb3727">
 
 
+<h4>empty basket :</h4>
+<img width="820" alt="empty" src="https://github.com/smarjmand/Django-Eshop-Project/assets/132053139/26957ac2-69f9-4fb9-8421-911d12798300">
+
+
+<h4>basket popup :</h4>
+<img width="1233" alt="notification" src="https://github.com/smarjmand/Django-Eshop-Project/assets/132053139/65a6d8b7-c96b-44b4-bf78-b79b3063c479">
+
+
 <h4>register page :</h4>
 <img width="677" alt="register" src="https://github.com/smarjmand/Django-Eshop-Project/assets/132053139/dad916ab-d344-4e07-8d63-2b94b9c1d3f9">
 
@@ -58,4 +66,5 @@ phone : 09103236629
 <img width="1255" alt="detail_2" src="https://github.com/smarjmand/Django-Eshop-Project/assets/132053139/ff5a23b3-7fc7-4e1e-ab8e-23c132fcf981">
 <img width="1259" alt="detail_3" src="https://github.com/smarjmand/Django-Eshop-Project/assets/132053139/85f915fd-cf7a-435b-ad1b-a44939d665e4">
 <img width="1265" alt="detail_4" src="https://github.com/smarjmand/Django-Eshop-Project/assets/132053139/bdb54ca5-0813-457d-9847-a5dc4141bdb7">
+
 
