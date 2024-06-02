@@ -52,3 +52,6 @@ phone : 09103236629
 <img width="798" alt="admin_1" src="https://github.com/smarjmand/Django-Eshop-Project/assets/132053139/98c212a1-5a70-4037-a5b8-e9375576e133">
 <img width="823" alt="admin_2" src="https://github.com/smarjmand/Django-Eshop-Project/assets/132053139/88d8025e-38d1-493a-a7f1-2b30e91a5cdd">
 
+
+<h4>product detail page :</h4>
+
