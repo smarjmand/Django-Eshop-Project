@@ -16,6 +16,15 @@ phone : 09103236629
 <h4>login page :</h4>
 <img width="646" alt="login_page" src="https://github.com/smarjmand/Django-Eshop-Project/assets/132053139/8d0028eb-bc0c-49ce-88a9-a7409b5eec67">
 
+
+<h4>login error :</h4>
+<img width="874" alt="user_not_found" src="https://github.com/smarjmand/Django-Eshop-Project/assets/132053139/81387f02-9cc3-45b5-9c00-9365264bacb3">
+
+
+<h4>forget password :</h4>
+<img width="818" alt="forget_pass" src="https://github.com/smarjmand/Django-Eshop-Project/assets/132053139/465c39be-2f2f-47be-a029-f23471c530c5">
+
+
 <h4>products :</h4>
 <img width="510" alt="store_page" src="https://github.com/smarjmand/Django-Eshop-Project/assets/132053139/f2c7b1a6-08a1-41d1-b489-7216861ff2e5">
 
