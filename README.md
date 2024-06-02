@@ -2,13 +2,14 @@
 this project is created by django frameword.
 templates are not created by me ( downloaded free templates ).
 
-## Contact Info 
+# Contact Info 
 Email : arjmand.sm@gmail.com / 
 Linkdin : mehdi-arjmand
 
 
-### Project Images
-<br>
+## Project Images
+
+main page :
 <img width="511" alt="main_page-2" src="https://github.com/smarjmand/Django-Eshop-Project/assets/132053139/01a89115-7a49-45b6-9218-1f8e9a693f66">
 
 <br>
