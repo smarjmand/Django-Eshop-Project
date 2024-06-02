@@ -68,7 +68,7 @@ phone : 09103236629
 <img width="808" alt="user_2" src="https://github.com/smarjmand/Django-Eshop-Project/assets/132053139/62201269-aba6-403a-8ab0-03223d2d5ad4">
 
 
-<h4>user ordered :</h4>
+<h4>user orders :</h4>
 <img width="790" alt="user_3" src="https://github.com/smarjmand/Django-Eshop-Project/assets/132053139/d4d04ab9-a519-4d38-9cbb-590ed3ff7dbd">
 
 
