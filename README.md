@@ -37,3 +37,10 @@ phone : 09103236629
 
 <h4>about us page :</h4>
 <img width="653" alt="about_me_page" src="https://github.com/smarjmand/Django-Eshop-Project/assets/132053139/1bb4919b-e6a8-4d0a-b55b-be5ba910b66b">
+
+
+<h4>articles page :</h4>
+<img width="526" alt="articles_2" src="https://github.com/smarjmand/Django-Eshop-Project/assets/132053139/ded214ac-3ec3-4f74-8b68-76999f989d54">
+
+<h4>single article :</h4>
+
