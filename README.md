@@ -48,3 +48,7 @@ phone : 09103236629
 <img width="1246" alt="single_article_3" src="https://github.com/smarjmand/Django-Eshop-Project/assets/132053139/e1a77169-056c-4b60-8680-d66e57d80c00">
 
 
+<h4>admin page :</h4>
+<img width="798" alt="admin_1" src="https://github.com/smarjmand/Django-Eshop-Project/assets/132053139/98c212a1-5a70-4037-a5b8-e9375576e133">
+<img width="823" alt="admin_2" src="https://github.com/smarjmand/Django-Eshop-Project/assets/132053139/88d8025e-38d1-493a-a7f1-2b30e91a5cdd">
+
