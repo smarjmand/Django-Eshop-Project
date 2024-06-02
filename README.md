@@ -2,7 +2,7 @@
 this project is created by django frameword.
 templates are not created by me ( downloaded free templates ).
 
-## Contect Info 
+## Contact Info 
 Email : arjmand.sm@gmail.com / 
 Linkdin : mehdi-arjmand
 
