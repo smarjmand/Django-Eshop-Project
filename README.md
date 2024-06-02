@@ -43,4 +43,7 @@ phone : 09103236629
 <img width="526" alt="articles_2" src="https://github.com/smarjmand/Django-Eshop-Project/assets/132053139/ded214ac-3ec3-4f74-8b68-76999f989d54">
 
 <h4>single article :</h4>
+<img width="1261" alt="single_article_1" src="https://github.com/smarjmand/Django-Eshop-Project/assets/132053139/94cf1ffb-1b28-4c5d-ae89-897f9a7f8e09">
+<img width="1255" alt="single_article_2" src="https://github.com/smarjmand/Django-Eshop-Project/assets/132053139/e2f84495-2315-4a68-9e8f-1ae737c29f12">
+
 
