@@ -68,8 +68,12 @@ phone : 09103236629
 <img width="808" alt="user_2" src="https://github.com/smarjmand/Django-Eshop-Project/assets/132053139/62201269-aba6-403a-8ab0-03223d2d5ad4">
 
 
-<h4>user orders :</h4>
+<h4>user orders history :</h4>
 <img width="790" alt="user_3" src="https://github.com/smarjmand/Django-Eshop-Project/assets/132053139/d4d04ab9-a519-4d38-9cbb-590ed3ff7dbd">
+
+
+<h4>user orders detail ( in user panel ) :</h4>
+<img width="778" alt="orders" src="https://github.com/smarjmand/Django-Eshop-Project/assets/132053139/f5daabfe-023f-4a58-8456-b3340b3d377a">
 
 
 
